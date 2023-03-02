@@ -1,12 +1,17 @@
-// 1. import `NextUIProvider` component
-// pages/_app.js
-
-// 1. Import `createTheme`
+import { motion } from 'framer-motion';
 import { createTheme, NextUIProvider } from '@nextui-org/react';
+import './styles.css';
+import React from 'react';
 
-// 2. Call `createTheme` and pass your custom theme values
+const links = [
+  { name: 'Home', to: '#', id: 1 },
+  { name: 'About', to: '#', id: 2 },
+  { name: 'Blog', to: '#', id: 3 },
+  { name: 'Contact', to: '#', id: 4 },
+];
+
 const theme = createTheme({
-  type: 'dark', // it could be "light" or "dark"
+  type: 'dark',
   theme: {
     colors: {
       primary: '#4ADE7B',
@@ -40,19 +45,26 @@ const theme = createTheme({
     primaryBorder: '$blue500',
     primaryBorderHover: '$blue600',
     primarySolidHover: '$blue700',
-    primarySolidContrast: '$white', // commonly used for text inside the component
+    primarySolidContrast: '$white',
     primaryShadow: '$blue500',
-
-    // ... rest of colors (secondary, success, warning, error, etc)
   },
 });
 
-// 3. Pass the new `theme`` to the `NextUIProvider`
 function MyApp({ Component, pageProps }) {
   return (
-    <NextUIProvider theme={theme}>
-      <Component {...pageProps} />
-    </NextUIProvider>
+    <motion.aside>
+      <div className='container'>
+        <NextUIProvider theme={theme}>
+          <Component {...pageProps} />
+        </NextUIProvider>
+
+        {links.map(({ name, to, id }) => (
+          <a key={id} href={to}>
+            {name}
+          </a>
+        ))}
+      </div>
+    </motion.aside>
   );
 }
 
