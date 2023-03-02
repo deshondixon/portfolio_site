@@ -1,70 +1,41 @@
-import { motion } from 'framer-motion';
-import { createTheme, NextUIProvider } from '@nextui-org/react';
-import './styles.css';
 import React from 'react';
-
-const links = [
-  { name: 'Home', to: '#', id: 1 },
-  { name: 'About', to: '#', id: 2 },
-  { name: 'Blog', to: '#', id: 3 },
-  { name: 'Contact', to: '#', id: 4 },
-];
+import { createTheme, NextUIProvider } from '@nextui-org/react';
 
 const theme = createTheme({
   type: 'dark',
   theme: {
     colors: {
+      // brand colors
+      primaryLight: '$green200',
+      primaryLightHover: '$green300',
+      primaryLightActive: '$green400',
+      primaryLightContrast: '$green600',
       primary: '#4ADE7B',
-      secondary: '#F9CB80',
-      error: '#FCC5D8',
+      primaryBorder: '$green500',
+      primaryBorderHover: '$green600',
+      primarySolidHover: '$green700',
+      primarySolidContrast: '$white',
+      primaryShadow: '$green500',
+
+      gradient:
+        'linear-gradient(112deg, $blue100 -25%, $pink500 -10%, $purple500 80%)',
+      link: '#5E1DAD',
+
+      // you can also create your own color
+      myColor: '#ff4ecd',
+
+      // ...  more colors
     },
-  },
-  colors: {
-    // generic colors
-    white: '#ffffff',
-    black: '#000000',
-
-    // background colors (light)
-    background: '$white',
-    backgroundAlpha: 'rgba(255, 255, 255, 0.8)', // used for semi-transparent backgrounds like the navbar
-    foreground: '$black',
-    backgroundContrast: '$white',
-
-    //semantic colors (light)
-    blue50: '#EDF5FF',
-    // ...
-    blue900: '#00254D',
-    // ...
-
-    // brand colors
-    primaryLight: '$blue200',
-    primaryLightHover: '$blue300', // commonly used on hover state
-    primaryLightActive: '$blue400', // commonly used on pressed state
-    primaryLightContrast: '$blue600', // commonly used for text inside the component
-    primary: '$blue600',
-    primaryBorder: '$blue500',
-    primaryBorderHover: '$blue600',
-    primarySolidHover: '$blue700',
-    primarySolidContrast: '$white',
-    primaryShadow: '$blue500',
+    space: {},
+    fonts: {},
   },
 });
 
 function MyApp({ Component, pageProps }) {
   return (
-    <motion.aside>
-      <div className='container'>
-        <NextUIProvider theme={theme}>
-          <Component {...pageProps} />
-        </NextUIProvider>
-
-        {links.map(({ name, to, id }) => (
-          <a key={id} href={to}>
-            {name}
-          </a>
-        ))}
-      </div>
-    </motion.aside>
+    <NextUIProvider theme={theme}>
+      <Component {...pageProps} />
+    </NextUIProvider>
   );
 }
 
