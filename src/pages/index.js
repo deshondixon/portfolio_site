@@ -1,20 +1,19 @@
-import { Grid, Button, Container, Text } from '@nextui-org/react';
-import Image from 'next/image';
-import nicole from 'public/nicole.png';
+import * as React from 'react';
+import {
+  Grid,
+  Button,
+  Container,
+  Text,
+  Link,
+  NextUIProvider,
+} from '@nextui-org/react';
+import Navbar from 'components/Navbar';
 
 export default function HomePage() {
   return (
     <>
+      <Navbar />
       <Container className='p-3'>
-        <div
-          style={{
-            zIndex: -1,
-            position: 'fixed',
-            width: '89vw',
-          }}
-        >
-          <Image src={nicole} alt='art' objectFit='cover' />
-        </div>
         <Text
           h1
           size={60}
