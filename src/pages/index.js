@@ -30,11 +30,6 @@ export default function HomePage() {
             DeShon Dixon Portfolio
           </Text>
         </Grid>
-        <Grid xs={12} md={6}>
-          <Button rounded flat color='gradient' auto>
-            Click me
-          </Button>
-        </Grid>
       </Grid.Container>
     </>
   );
