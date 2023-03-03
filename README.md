@@ -1,4 +1,4 @@
-DeShon Dixon Portfolio Site
+# DeShon Dixon Portfolio Site
 
 ## Getting Started
 
