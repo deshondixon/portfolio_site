@@ -1,36 +1,32 @@
-import * as React from 'react';
-import {
-  Card,
-  Col,
-  Grid,
-  Button,
-  Container,
-  Text,
-  Link,
-  NextUIProvider,
-} from '@nextui-org/react';
-import Navbar from 'components/Navbar';
+import React from 'react';
+import { Navbar, Button, Link, Text, Card, Avatar } from '@nextui-org/react';
+import { Layout } from 'components/Layout';
+import { Logo } from 'components/Logo';
+import { VariantsSelectorWrapper } from 'components/VariantsSelectorWrapper';
 
-export default function HomePage() {
+export default function App() {
+  const [variant, setVariant] = React.useState('static');
+
   return (
-    <>
-      <Grid.Container gap={2} justify='center'>
-        <Grid xs={12} md={6}>
-          <Navbar />
-        </Grid>
-        <Grid xs={12} md={6}>
-          <Text
-            h1
-            size={50}
-            css={{
-              textGradient: '45deg, $blue600 -20%, $pink600 50%',
-            }}
-            weight='bold'
-          >
-            DeShon Dixon Portfolio
-          </Text>
-        </Grid>
-      </Grid.Container>
-    </>
+    <Layout>
+      <Navbar isBordered variant='sticky'>
+        <Navbar.Brand>
+          {' '}
+          <Logo />
+        </Navbar.Brand>
+        <Navbar.Content hideIn='xs'>
+          <Navbar.Link href='#'>Projects</Navbar.Link>
+          <Navbar.Link isActive href='#'>
+            About
+          </Navbar.Link>
+        </Navbar.Content>
+        <Navbar.Content>
+          <Button color='gradient' auto ghost as={Link} href='#'>
+            Contact Me
+          </Button>
+        </Navbar.Content>
+      </Navbar>
+      <VariantsSelectorWrapper></VariantsSelectorWrapper>
+    </Layout>
   );
 }
