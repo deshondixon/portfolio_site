@@ -1,5 +1,13 @@
 import React from 'react';
-import { Navbar, Button, Link, Text, Card, Avatar } from '@nextui-org/react';
+import {
+  Navbar,
+  Button,
+  Link,
+  Text,
+  Card,
+  Avatar,
+  Spacer,
+} from '@nextui-org/react';
 import { Layout } from 'components/Layout';
 import { Logo } from 'components/Logo';
 import { VariantsSelectorWrapper } from 'components/VariantsSelectorWrapper';
@@ -24,8 +32,10 @@ export default function App() {
           <Button color='gradient' auto ghost as={Link} href='#'>
             Contact Me
           </Button>
+          <Spacer y={1} />
         </Navbar.Content>
       </Navbar>
+      <Spacer y={1} />
       <VariantsSelectorWrapper></VariantsSelectorWrapper>
     </Layout>
   );

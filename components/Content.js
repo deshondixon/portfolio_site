@@ -16,8 +16,9 @@ import {
 export const Content = () => (
   <>
     <Grid.Container gap={2} justify='center'>
+      <Spacer y={1} />
+      <Avatar size='2xl' src='deshon.png' color='gradient' bordered />
       <Grid xs={12} md={6}>
-        <Avatar size='xl' src='deshon.png' color='gradient' bordered />
         <Text
           h1
           size={45}
@@ -28,6 +29,7 @@ export const Content = () => (
         >
           DeShon Dixon
         </Text>
+        <Spacer y={1} />
         <Text
           size='$lg'
           css={{
@@ -44,6 +46,5 @@ export const Content = () => (
         </Text>
       </Grid>
     </Grid.Container>
-    <Spacer y={1} />
   </>
 );
