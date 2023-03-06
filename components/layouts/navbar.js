@@ -17,9 +17,9 @@ export default function App() {
     <Layout>
       <Navbar isBordered variant="floating">
         <Navbar.Brand>
-          <Navbar.Toggle aria-label="toggle navigation" />
+          <Navbar.Toggle color="gradient" aria-label="toggle navigation" />
           <Logo />
-          <Text b color="inherit" hideIn="xs">
+          <Text b color="gradient" hideIn="xs">
             DeShon Dixon
           </Text>
         </Navbar.Brand>
@@ -32,7 +32,7 @@ export default function App() {
         </Navbar.Content>
         <Navbar.Content>
           <Navbar.Item>
-            <Button auto flat as={Link} href="#">
+            <Button color="gradient" auto ghost as={Link} href="#">
               Contact
             </Button>
           </Navbar.Item>
