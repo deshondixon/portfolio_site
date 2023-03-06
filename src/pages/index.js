@@ -19,7 +19,7 @@ const Page = () => {
             weight="bold"
             h1
             css={{
-              textGradient: '45deg, $yellow600 -0%, $red600 100%'
+              textGradient: '45deg, $gray700 -0%, $purple400 40%, $black 100%'
             }}
             size={30}
           >
