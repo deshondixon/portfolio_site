@@ -11,7 +11,7 @@ const Page = () => {
             squared
             src="deshon.png"
             css={{ size: '$36' }}
-            justify="center"
+            justify="space-between"
           />
         </Grid>
         <Grid xs={6}>
