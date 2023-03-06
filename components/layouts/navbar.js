@@ -1,5 +1,4 @@
-import Logo from 'logo.js'
-import Link from '@nextui-org/react'
+import Logo from 'components/layouts/logo'
 import {
   Container,
   Box,
@@ -45,3 +44,5 @@ const Navbar = (props) => {
     </Box>
   )
 }
+
+export default Navbar

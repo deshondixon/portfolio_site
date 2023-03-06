@@ -1,6 +1,6 @@
 import { Link, Image, Text } from '@nextui-org/react'
 import { useColorModeValue } from '@chakra-ui/react'
-import styled from 'emotion/styled'
+import styled from '@emotion/styled'
 
 const LogoBox = styled.span`
   font-weight: bold;
