@@ -16,6 +16,7 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@nextui-org/react": "^1.0.0-beta.12",
+    "boxicons": "^2.1.4",
     "eslint": "8.35.0",
     "framer-motion": "^10.0.2",
     "next": "^13.2.3",
