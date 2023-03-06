@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Box } from '@chakra-ui/react'
+import { Box, Container } from '@chakra-ui/react'
 
 const Main = ({ children, router }) => {
   return (
@@ -10,9 +10,14 @@ const Main = ({ children, router }) => {
             name="viewport"
             content="initial-scale=1.0, width=device-width"
           />
-          <Title>DeShon Dixon - Homepage</Title>
+          <title>DeShon Dixon - Homepage</title>
         </Head>
+        <Container maxW="container.md" pt={14}>
+          {children}
+        </Container>
       </Box>
     </div>
   )
 }
+
+export default Main
