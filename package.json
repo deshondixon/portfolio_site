@@ -2,7 +2,6 @@
   "name": "dd-portfolio",
   "version": "0.1.0",
   "description": "DeShon Dixon's Portfolio Website",
-  "main": "./src/index.js",
   "private": true,
   "scripts": {
     "dev": "next dev",
