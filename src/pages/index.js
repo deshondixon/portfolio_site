@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
   Navbar,
   Button,
@@ -6,9 +6,9 @@ import {
   Text,
   Card,
   Avatar,
-  Spacer,
-} from '@nextui-org/react';
+  Spacer
+} from '@nextui-org/react'
 
-export default function App() {
-  return <></>;
+const Page = () => {
+  return <div>DeShon Dixon</div>
 }
