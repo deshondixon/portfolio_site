@@ -15,7 +15,14 @@ const Page = () => {
           />
         </Grid>
         <Grid xs={6}>
-          <Text fontSize="xl" fontWeight="bold">
+          <Text
+            weight="bold"
+            h1
+            css={{
+              textGradient: '45deg, $yellow600 -0%, $red600 100%'
+            }}
+            size={30}
+          >
             Hello, I&apos;m a Software developer based in Washington!
           </Text>
         </Grid>
