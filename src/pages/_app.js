@@ -30,11 +30,9 @@ const theme = createTheme({
 const Website = ({ Component, pageProps, router }) => {
   return (
     <NextUIProvider theme={theme}>
-      <ChakraProvider>
-        <Layout router={router}>
-          <Component {...pageProps} key={router.route} />
-        </Layout>
-      </ChakraProvider>
+      <Layout router={router}>
+        <Component {...pageProps} key={router.route} />
+      </Layout>
     </NextUIProvider>
   )
 }

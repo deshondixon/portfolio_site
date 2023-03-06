@@ -21,7 +21,6 @@ const Logo = () => {
     <Link block color="secondary" href="#">
       <a>
         <LogoBox>
-          <Image src={nicole} width={320} height={180} alt="nicole" />
           <Text></Text>
         </LogoBox>
       </a>

@@ -1,55 +1,64 @@
+import { Navbar, Button, Link, Text } from '@nextui-org/react'
+import { Layout } from './Layout.js'
 import Logo from 'components/layouts/logo'
-import {
-  Container,
-  Box,
-  Link,
-  Stack,
-  Heading,
-  Flex,
-  Menu,
-  MenuItem,
-  MenuList,
-  MenuButton,
-  IconButton,
-  useColorModeValue
-} from '@chakra-ui/react'
-import { HumburgerIcon } from '@chakra-ui/icons'
 
-const LinkItem = ({ href, path, children }) => {
-  const active = path === href
-  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
-  return (
-    <NextLink href={href} passHref>
-      <Link p={2} bg={active ? 'glassTeal' : undefined}>
-        {children}
-      </Link>
-    </NextLink>
-  )
-}
-
-const Navbar = (props) => {
-  const { path } = props
+export default function App() {
+  const collapseItems = [
+    'Features',
+    'Customers',
+    'Pricing',
+    'Company',
+    'Legal',
+    'Team',
+    'Help & Feedback',
+    'Login',
+    'Sign Up'
+  ]
 
   return (
-    <Box
-      position="fixed"
-      as="nav"
-      w="100%"
-      bg={useColorModeValue('#fffffff40', '#20202380')}
-      style={{ backdropFilter: 'blur(10px)' }}
-      zIndex={1}
-      {...props}
-    >
-      <Container
-        display="flex"
-        p={2}
-        maxW="container.md"
-        wrap="wrap"
-        align="center"
-        justify="space-between"
-      ></Container>
-    </Box>
+    <Layout>
+      <Navbar isBordered variant="sticky">
+        <Navbar.Brand>
+          <Navbar.Toggle aria-label="toggle navigation" />
+          <Logo />
+          <Text b color="inherit" hideIn="xs">
+            ACME
+          </Text>
+        </Navbar.Brand>
+        <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline">
+          <Navbar.Link href="#">Features</Navbar.Link>
+          <Navbar.Link isActive href="#">
+            Customers
+          </Navbar.Link>
+          <Navbar.Link href="#">Pricing</Navbar.Link>
+          <Navbar.Link href="#">Company</Navbar.Link>
+        </Navbar.Content>
+        <Navbar.Content>
+          <Navbar.Link color="inherit" href="#">
+            Login
+          </Navbar.Link>
+          <Navbar.Item>
+            <Button auto flat as={Link} href="#">
+              Sign Up
+            </Button>
+          </Navbar.Item>
+        </Navbar.Content>
+        <Navbar.Collapse>
+          {collapseItems.map((item, index) => (
+            <Navbar.CollapseItem key={item}>
+              <Link
+                color="inherit"
+                css={{
+                  minWidth: '100%'
+                }}
+                href="#"
+              >
+                {item}
+              </Link>
+            </Navbar.CollapseItem>
+          ))}
+        </Navbar.Collapse>
+      </Navbar>
+    </Layout>
   )
 }
-
-export default Navbar
