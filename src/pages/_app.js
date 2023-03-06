@@ -1,5 +1,7 @@
-import React from 'react';
-import { createTheme, NextUIProvider } from '@nextui-org/react';
+import React from 'react'
+import { ChakraProvider } from '@chakra-ui/react'
+import Layout from '../components/layout/main'
+import { createTheme, NextUIProvider } from '@nextui-org/react'
 
 const theme = createTheme({
   type: 'dark',
@@ -18,19 +20,19 @@ const theme = createTheme({
       gradient:
         'linear-gradient(112deg, $blue100 -25%, $pink500 -10%, $purple500 80%)',
       link: '#5E1DAD',
-      myColor: '#ff4ecd',
+      myColor: '#ff4ecd'
     },
     space: {},
-    fonts: {},
-  },
-});
+    fonts: {}
+  }
+})
 
-function MyApp({ Component, pageProps }) {
+const Website = ({ Component, pageProps }) => {
   return (
     <NextUIProvider theme={theme}>
       <Component {...pageProps} />
     </NextUIProvider>
-  );
+  )
 }
 
-export default MyApp;
+export default Website
