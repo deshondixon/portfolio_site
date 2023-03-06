@@ -4,42 +4,36 @@ import Logo from 'components/layouts/logo'
 
 export default function App() {
   const collapseItems = [
-    'Features',
-    'Customers',
-    'Pricing',
-    'Company',
-    'Legal',
-    'Team',
-    'Help & Feedback',
-    'Login',
-    'Sign Up'
+    'About',
+    'Contact',
+    'Projects',
+    'Experience',
+    'Github',
+    'LinkedIn',
+    'Contact'
   ]
 
   return (
     <Layout>
-      <Navbar isBordered variant="sticky">
+      <Navbar isBordered variant="floating">
         <Navbar.Brand>
           <Navbar.Toggle aria-label="toggle navigation" />
           <Logo />
           <Text b color="inherit" hideIn="xs">
-            ACME
+            DeShon Dixon
           </Text>
         </Navbar.Brand>
         <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline">
-          <Navbar.Link href="#">Features</Navbar.Link>
+          <Navbar.Link href="#">About</Navbar.Link>
           <Navbar.Link isActive href="#">
-            Customers
+            Projects
           </Navbar.Link>
-          <Navbar.Link href="#">Pricing</Navbar.Link>
-          <Navbar.Link href="#">Company</Navbar.Link>
+          <Navbar.Link href="#">Experience</Navbar.Link>
         </Navbar.Content>
         <Navbar.Content>
-          <Navbar.Link color="inherit" href="#">
-            Login
-          </Navbar.Link>
           <Navbar.Item>
             <Button auto flat as={Link} href="#">
-              Sign Up
+              Contact
             </Button>
           </Navbar.Item>
         </Navbar.Content>

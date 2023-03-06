@@ -3,7 +3,7 @@ import { Avatar, Grid, Card, Text } from '@nextui-org/react'
 
 export const Content = () => (
   <Container>
-    <Grid.Container gap={2} justify="left">
+    <Grid.Container gap={2} justify="center">
       <Grid>
         <Avatar
           zoomed
@@ -12,28 +12,30 @@ export const Content = () => (
           css={{ size: '$36' }}
           justify="space-between"
         />
+        <Text
+          h1
+          size={30}
+          css={{
+            textGradient: '45deg, $blue600 -20%, $purple600 50%'
+          }}
+          weight="bold"
+        >
+          DeShon Dixon
+        </Text>
+        <p>( Software Developer )</p>
       </Grid>
       <Grid xs={6}>
         <Text
-          weight="bold"
           h1
-          css={{
-            textGradient: '45deg, $purple100 -0%, $purple400 50%, $black 100%'
-          }}
           size={30}
+          css={{
+            textGradient: '45deg, $blue600 -20%, $purple600 50%'
+          }}
+          weight="bold"
         >
           Hello, I&apos;m a Software developer based in Washington!
         </Text>
       </Grid>
     </Grid.Container>
-
-    <Box display={{ md: 'flex' }}>
-      <Box flexGrow={1}>
-        <Heading as="h2" variant="page-title">
-          DeShon Dixon
-        </Heading>
-        <p>( Software Developer )</p>
-      </Box>
-    </Box>
   </Container>
 )
