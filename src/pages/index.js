@@ -12,3 +12,5 @@ import {
 const Page = () => {
   return <div>DeShon Dixon</div>
 }
+
+export default Page
