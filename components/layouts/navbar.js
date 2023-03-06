@@ -14,3 +14,34 @@ import {
   IconButton,
   useColorModeValue
 } from '@chakra-ui/react'
+import { HumburgerIcon } from '@chakra-ui/icons'
+
+const LinkItem = ({ href, path, children }) => {
+  const active = path === href
+  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+  return (
+    <NextLink href={href} passHref>
+      <Link p={2} bg={active ? 'glassTeal' : undefined}>
+        {children}
+      </Link>
+    </NextLink>
+  )
+}
+
+const Navbar = (props) => {
+  const { path } = props
+
+  return (
+    <Box
+      position="fixed"
+      as="nav"
+      w="100%"
+      bg={useColorModeValue('#fffffff40', '#20202380')}
+      style={{ backdropFilter: 'blur(10px)' }}
+      zIndex={1}
+      {...props}
+    >
+      Navbar
+    </Box>
+  )
+}
