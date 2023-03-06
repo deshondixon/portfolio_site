@@ -1,12 +1,34 @@
-import { Container, Box } from '@chakra-ui/react'
+import { Box, Container, Heading } from '@chakra-ui/react'
+import { Avatar, Grid, Card, Text } from '@nextui-org/react'
 
 const Page = () => {
   return (
     <Container>
-      <Box borderRadius="lg" bg="red">
-        Hello, I&apos;m a Software developer based in Washington!
+      <Grid.Container gap={2} justify="left">
+        <Grid>
+          <Avatar
+            zoomed
+            squared
+            src="deshon.png"
+            css={{ size: '$36' }}
+            justify="center"
+          />
+        </Grid>
+        <Grid xs={6}>
+          <Text fontSize="xl" fontWeight="bold">
+            Hello, I&apos;m a Software developer based in Washington!
+          </Text>
+        </Grid>
+      </Grid.Container>
+
+      <Box display={{ md: 'flex' }}>
+        <Box flexGrow={1}>
+          <Heading as="h2" variant="page-title">
+            DeShon Dixon
+          </Heading>
+          <p>( Software Developer )</p>
+        </Box>
       </Box>
-      <div>DeShon Dixon</div>
     </Container>
   )
 }
