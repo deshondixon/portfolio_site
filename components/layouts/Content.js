@@ -25,7 +25,7 @@ export const Content = () => (
             Hello, I&apos;m a Software developer based in Washington!
           </Text>
           <Spacer />
-          <Avatar zoomed squared src="deshon.png" css={{ size: '$36' }} />
+          <Avatar zoomed src="deshon.png" css={{ size: '$36' }} />
           <Spacer />
           <Text
             h1
