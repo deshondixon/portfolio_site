@@ -28,7 +28,7 @@ export default function App() {
           <Navbar.Link isActive href="#">
             Projects
           </Navbar.Link>
-          <Navbar.Link href="#">Experience</Navbar.Link>
+          <Navbar.Link href="#"> Experience </Navbar.Link>
         </Navbar.Content>
         <Navbar.Content>
           <Navbar.Item>
