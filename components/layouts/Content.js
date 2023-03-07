@@ -26,13 +26,8 @@ export const Content = () => (
               Hello, I&apos;m a Software developer based in Washington!
             </Text>
             <Grid xs={12}>
-              <Avatar
-                zoomed
-                squared
-                src="deshon.png"
-                css={{ size: '$36' }}
-                justify="space-between"
-              />
+              <Avatar zoomed squared src="deshon.png" css={{ size: '$36' }} />
+              <Spacer />
               <Text
                 h1
                 size={30}
@@ -43,7 +38,9 @@ export const Content = () => (
               >
                 DeShon Dixon
               </Text>
-              <p>( Software Developer )</p>
+              <Text size={15} weight="bold">
+                ( Software Developer )
+              </Text>
             </Grid>
           </Grid>
         </Col>
