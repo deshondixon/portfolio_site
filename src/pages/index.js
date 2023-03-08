@@ -31,8 +31,33 @@ const Page = () => {
             <Text size={15} weight="bold">
               ( Software Developer )
             </Text>
-            <Section />
           </Grid>
+          <Section delay={0.1}>
+            <Text
+              h2
+              size={30}
+              css={{
+                textGradient: '45deg, $blue600 -20%, $purple600 50%'
+              }}
+              weight="bold"
+            >
+              {' '}
+              Work{' '}
+            </Text>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl
+              rhoncus mattis rhoncus urna. Pellentesque adipiscing commodo elit
+              at imperdiet. Aliquet nibh praesent tristique magna sit amet purus
+              gravida quis. Diam vulputate ut pharetra sit amet. Laoreet non
+              curabitur gravida arcu ac tortor dignissim convallis aenean.
+              Sodales ut etiam sit amet nisl purus in mollis. Amet nisl purus in
+              mollis nunc. Nulla facilisi nullam vehicula ipsum a arcu cursus
+              vitae congue. Cursus euismod quis viverra nibh cras. Id neque
+              aliquam vestibulum morbi blandit cursus. Odio facilisis mauris sit
+              amet. Purus in massa tempor nec feugiat.
+            </p>
+          </Section>
         </Grid.Container>
       </Container>
     </>
