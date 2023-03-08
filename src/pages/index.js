@@ -1,6 +1,6 @@
 import Section from 'components/layouts/section'
 import Paragraph from 'components/layouts/paragraph'
-import { Container, Avatar, Grid, Text } from '@nextui-org/react'
+import { Container, Avatar, Grid, Text, Link } from '@nextui-org/react'
 
 const Page = () => {
   return (
@@ -56,6 +56,18 @@ const Page = () => {
                 project results and possesses an innate talent for quickly
                 mastering technology and new concepts.{' '}
               </Text>
+              <Link href="https://www.linkedin.com/in/deshondixon/">
+                <Text
+                  h2
+                  size={30}
+                  css={{
+                    textGradient: '45deg, $blue600 -20%, $purple600 50%'
+                  }}
+                  weight="bold"
+                >
+                  LinkedIn
+                </Text>
+              </Link>
             </Paragraph>
           </Section>
         </Grid.Container>
