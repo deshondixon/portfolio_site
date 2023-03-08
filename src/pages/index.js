@@ -1,4 +1,5 @@
 import Section from 'components/layouts/section'
+import Paragraph from 'components/layouts/paragraph'
 import { Container, Avatar, Grid, Text } from '@nextui-org/react'
 
 const Page = () => {
@@ -44,19 +45,18 @@ const Page = () => {
               {' '}
               Work{' '}
             </Text>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl
-              rhoncus mattis rhoncus urna. Pellentesque adipiscing commodo elit
-              at imperdiet. Aliquet nibh praesent tristique magna sit amet purus
-              gravida quis. Diam vulputate ut pharetra sit amet. Laoreet non
-              curabitur gravida arcu ac tortor dignissim convallis aenean.
-              Sodales ut etiam sit amet nisl purus in mollis. Amet nisl purus in
-              mollis nunc. Nulla facilisi nullam vehicula ipsum a arcu cursus
-              vitae congue. Cursus euismod quis viverra nibh cras. Id neque
-              aliquam vestibulum morbi blandit cursus. Odio facilisis mauris sit
-              amet. Purus in massa tempor nec feugiat.
-            </p>
+            <Paragraph>
+              <Text p size={20}>
+                DeShon Dixon is a software developer and Army Veteran offering a
+                strong foundation in software development and programming
+                principles across multiple platforms. Offers knowledge of
+                authoring code derived from designing, building, and maintaining
+                websites using scripting languages, content creation tools, and
+                digital media. Demonstrated history of producing high-quality
+                project results and possesses an innate talent for quickly
+                mastering technology and new concepts.{' '}
+              </Text>
+            </Paragraph>
           </Section>
         </Grid.Container>
       </Container>
