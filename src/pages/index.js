@@ -69,11 +69,13 @@ const Page = () => {
                 </Text>
               </Link>
             </Paragraph>
-            <Link href="https://www.linkedin.com/in/deshondixon/">
-              <Button ghost bordered color="gradient" auto>
-                My Portfolio
-              </Button>
-            </Link>
+            <Box align="center" my={4}>
+              <Link href="https://www.linkedin.com/in/deshondixon/">
+                <Button ghost bordered color="gradient" auto>
+                  My Portfolio
+                </Button>
+              </Link>
+            </Box>
           </Section>
         </Grid.Container>
       </Container>
