@@ -84,7 +84,7 @@ const Page = () => {
           <Section delay={0.2}>
             <Text
               h1
-              size={15}
+              size={30}
               css={{
                 textGradient: '45deg, $blue600 -20%, $purple600 50%'
               }}
@@ -92,6 +92,16 @@ const Page = () => {
             >
               Bio
             </Text>
+            <BioSection>
+              <BioYear>1994</BioYear>
+              <Text
+                css={{
+                  textGradient: '45deg, $blue600 -20%, $purple600 50%'
+                }}
+              >
+                Born in Ventura, California.
+              </Text>
+            </BioSection>
           </Section>
         </Grid.Container>
       </Container>
