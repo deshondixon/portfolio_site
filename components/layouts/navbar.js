@@ -25,10 +25,12 @@ export default function App() {
           <Grid.Container gap={2}>
             <Grid>
               <Switch
+                color="secondary"
+                shadow
                 checked={true}
                 size="xl"
-                color="success"
-                icon={<NotificationIcon />}
+                iconOn={<SunIcon filled />}
+                iconOff={<MoonIcon filled />}
               />
             </Grid>
           </Grid.Container>
