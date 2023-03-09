@@ -74,7 +74,7 @@ const Page = () => {
             </Paragraph>
             <Box align="center" my={4}>
               <Link href="https://www.linkedin.com/in/deshondixon/">
-                <Button ghost bordered color="gradient" auto>
+                <Button size="lg" ghost bordered color="gradient" auto>
                   My Portfolio
                 </Button>
               </Link>
