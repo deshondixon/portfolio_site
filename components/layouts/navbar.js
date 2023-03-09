@@ -1,6 +1,9 @@
 import { Navbar, Button, Link, Text } from '@nextui-org/react'
 import { Layout } from './Layout.js'
 import Logo from 'components/layouts/logo'
+import { Grid, Switch } from '@nextui-org/react'
+import { SunIcon } from './SunIcon'
+import { MoonIcon } from './MoonIcon'
 
 export default function App() {
   const collapseItems = [
@@ -19,9 +22,16 @@ export default function App() {
         <Navbar.Brand>
           <Navbar.Toggle color="gradient" aria-label="toggle navigation" />
           <Logo />
-          <Text b color="gradient" hideIn="xs">
-            DeShon Dixon
-          </Text>
+          <Grid.Container gap={2}>
+            <Grid>
+              <Switch
+                checked={true}
+                size="xl"
+                color="success"
+                icon={<NotificationIcon />}
+              />
+            </Grid>
+          </Grid.Container>
         </Navbar.Brand>
         <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline">
           <Navbar.Link href="#">About</Navbar.Link>
