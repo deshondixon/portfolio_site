@@ -1,21 +1,24 @@
 import Section from 'components/layouts/section'
 import Paragraph from 'components/layouts/paragraph'
+import { Box } from '@chakra-ui/react'
 import { Container, Avatar, Grid, Text, Link, Button } from '@nextui-org/react'
 
 const Page = () => {
   return (
     <>
       <Container gap={2}>
-        <Text
-          h1
-          size={41}
-          css={{
-            textGradient: '45deg, $blue600 -20%, $purple600 50%'
-          }}
-          weight="bold"
-        >
-          Hello, I&apos;m a Software developer based in Washington!
-        </Text>
+        <Box align="center" my={4}>
+          <Text
+            h1
+            size={41}
+            css={{
+              textGradient: '45deg, $blue600 -20%, $purple600 50%'
+            }}
+            weight="bold"
+          >
+            Hello, I&apos;m a Software developer based in Washington!
+          </Text>
+        </Box>
         <Grid.Container gap={2} justify="center">
           <Grid>
             <Avatar zoomed src="deshon.png" css={{ size: '$40' }} />
