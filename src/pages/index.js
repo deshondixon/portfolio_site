@@ -102,6 +102,11 @@ const Page = () => {
                 Born in Ventura, California.
               </Text>
             </BioSection>
+            <BioSection>
+              <BioYear>2023</BioYear>
+              Completed Code Fellows course for Advanced Software Development in
+              Python.
+            </BioSection>
           </Section>
         </Grid.Container>
       </Container>
