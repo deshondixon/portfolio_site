@@ -1,6 +1,7 @@
 import Section from 'components/layouts/section'
 import Paragraph from 'components/layouts/paragraph'
 import { Box } from '@chakra-ui/react'
+import { BioSection, BioYear } from 'components/layouts/bio'
 import { Container, Avatar, Grid, Text, Link, Button } from '@nextui-org/react'
 
 const Page = () => {
@@ -79,6 +80,18 @@ const Page = () => {
                 </Button>
               </Link>
             </Box>
+          </Section>
+          <Section delay={0.2}>
+            <Text
+              h1
+              size={15}
+              css={{
+                textGradient: '45deg, $blue600 -20%, $purple600 50%'
+              }}
+              weight="bold"
+            >
+              Bio
+            </Text>
           </Section>
         </Grid.Container>
       </Container>
