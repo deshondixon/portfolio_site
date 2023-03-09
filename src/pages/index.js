@@ -92,21 +92,26 @@ const Page = () => {
             >
               Bio
             </Text>
-            <BioSection>
-              <BioYear>1994</BioYear>
-              <Text
-                css={{
-                  textGradient: '45deg, $blue600 -20%, $purple600 50%'
-                }}
-              >
+            <Text size={20} weight="bold">
+              <BioSection>
+                <BioYear>1994</BioYear>
                 Born in Ventura, California.
-              </Text>
-            </BioSection>
-            <BioSection>
-              <BioYear>2023</BioYear>
-              Completed Code Fellows course for Advanced Software Development in
-              Python.
-            </BioSection>
+              </BioSection>
+              <BioSection>
+                <BioYear>2012</BioYear>
+                Began freelance Video Editing.
+              </BioSection>
+              <BioSection></BioSection>
+              <BioSection>
+                <BioYear>2019</BioYear>
+                Completed US Army service as a 91B Diesel Mechanic.
+              </BioSection>
+              <BioSection>
+                <BioYear>2023</BioYear>
+                Completed Code Fellows course for Advanced Software Development
+                in Python.
+              </BioSection>
+            </Text>
           </Section>
         </Grid.Container>
       </Container>
