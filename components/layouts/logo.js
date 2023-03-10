@@ -19,11 +19,9 @@ const LogoBox = styled.span`
 const Logo = () => {
   return (
     <Link block color="secondary" href="#">
-      <a>
-        <LogoBox>
-          <Text></Text>
-        </LogoBox>
-      </a>
+      <LogoBox>
+        <Text></Text>
+      </LogoBox>
     </Link>
   )
 }

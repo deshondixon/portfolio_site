@@ -18,7 +18,7 @@ import { BioSection, BioYear } from 'components/layouts/bio'
 export const Content = () => (
   <>
     <Container gap={2}>
-      <Box align="center" my={4}>
+      <Box align="center">
         <Text
           h1
           size={41}
@@ -32,7 +32,14 @@ export const Content = () => (
       </Box>
       <Grid.Container gap={2} justify="center">
         <Grid>
-          <Avatar zoomed src="deshon.png" css={{ size: '$40' }} />
+          <Avatar
+            color="gradient"
+            bordered
+            class="animate-pulse"
+            pointer
+            src="deshon.png"
+            css={{ size: '$40' }}
+          />
           <Text
             h1
             size={30}

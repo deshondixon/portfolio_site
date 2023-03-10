@@ -46,7 +46,7 @@ export default function App() {
         </Navbar.Content>
         <Navbar.Content>
           <Navbar.Item>
-            <Button color="gradient" auto ghost as={Link} href="#">
+            <Button color="gradient" auto ghost href="#">
               Contact
             </Button>
           </Navbar.Item>
