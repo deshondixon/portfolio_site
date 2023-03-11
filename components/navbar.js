@@ -7,7 +7,6 @@ import {
   Switch,
   useTheme
 } from '@nextui-org/react'
-import MainLayout from './main'
 import Logo from './logo'
 import { SunIcon } from './SunIcon'
 import { MoonIcon } from './MoonIcon'
