@@ -7,12 +7,12 @@ import {
   Switch,
   useTheme
 } from '@nextui-org/react'
-import { MainLayout } from 'components/layouts/main'
-import Logo from 'components/layouts/logo'
-import { SunIcon } from 'components/layouts/SunIcon'
-import { MoonIcon } from 'components/layouts/MoonIcon'
+import { MainLayout } from './main'
+import Logo from './logo'
+import { SunIcon } from './SunIcon'
+import { MoonIcon } from './MoonIcon'
 
-export default function App({ isDarkMode, onThemeChange }) {
+const MainNavbar = ({ isDarkMode, onThemeChange }) => {
   const theme = useTheme()
   const collapseItems = [
     'About',
@@ -77,3 +77,5 @@ export default function App({ isDarkMode, onThemeChange }) {
     </MainLayout>
   )
 }
+
+export default MainNavbar

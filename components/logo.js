@@ -1,5 +1,4 @@
 import { Link, Image, Text } from '@nextui-org/react'
-import { useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 
 const LogoBox = styled.span`

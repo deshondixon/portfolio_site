@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { createTheme, NextUIProvider } from '@nextui-org/react'
-import MainLayout from 'components/layouts/main'
-import Navbar from 'components/layouts/navbar'
+import { MainLayout } from 'components/main.js'
 
 const darkTheme = createTheme({
   type: 'dark',

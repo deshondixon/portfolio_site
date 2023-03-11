@@ -10,10 +10,10 @@ import {
   Col
 } from '@nextui-org/react'
 
-import Section from 'components/layouts/section'
-import Paragraph from 'components/layouts/paragraph'
+import Section from './section'
+import Paragraph from './paragraph'
 import { Box } from '@chakra-ui/react'
-import { BioSection, BioYear } from 'components/layouts/bio'
+import { BioSection, BioYear } from './bio'
 
 export const Content = () => (
   <>
