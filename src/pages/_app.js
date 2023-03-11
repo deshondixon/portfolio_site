@@ -28,7 +28,7 @@ const theme = createTheme({
 
 const Website = ({ Component, pageProps, router }) => {
   return (
-    <NextUIProvider theme={theme}>
+    <NextUIProvider theme={{ type: 'dark' }}>
       <Layout router={router}>
         <Component {...pageProps} />
       </Layout>
