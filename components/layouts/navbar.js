@@ -7,7 +7,7 @@ import {
   Switch,
   useTheme
 } from '@nextui-org/react'
-import { Layout } from './Layout.js'
+import { MainLayout } from 'components/layouts/main'
 import Logo from 'components/layouts/logo'
 import { SunIcon } from 'components/layouts/SunIcon'
 import { MoonIcon } from 'components/layouts/MoonIcon'
@@ -25,7 +25,7 @@ export default function App({ isDarkMode, onThemeChange }) {
   ]
 
   return (
-    <Layout>
+    <MainLayout>
       <Navbar isBordered variant="floating">
         <Navbar.Brand>
           <Navbar.Toggle color="gradient" aria-label="toggle navigation" />
@@ -75,6 +75,6 @@ export default function App({ isDarkMode, onThemeChange }) {
           ))}
         </Navbar.Collapse>
       </Navbar>
-    </Layout>
+    </MainLayout>
   )
 }

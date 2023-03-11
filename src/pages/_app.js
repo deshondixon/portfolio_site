@@ -62,7 +62,7 @@ const Website = ({ Component, pageProps, router }) => {
 
   return (
     <NextUIProvider theme={theme}>
-      <MainLayout router={router}>
+      <MainLayout>
         <Component {...pageProps} />
         <Navbar isDarkMode={isDarkMode} onThemeChange={handleThemeChange} />
       </MainLayout>
