@@ -39,7 +39,7 @@ export default function App({ isDarkMode, onThemeChange }) {
                 size="xl"
                 iconOn={<SunIcon filled />}
                 iconOff={<MoonIcon filled />}
-                onChange={onThemeChange}
+                onChange={handleThemeChange}
                 onClick={onThemeChange}
               />
             </Grid>

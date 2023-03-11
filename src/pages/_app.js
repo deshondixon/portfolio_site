@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { createTheme, NextUIProvider } from '@nextui-org/react'
-import Layout from 'components/layouts/main'
+import MainLayout from 'components/layouts/main'
 import Navbar from 'components/layouts/navbar'
 
 const darkTheme = createTheme({
@@ -62,10 +62,10 @@ const Website = ({ Component, pageProps, router }) => {
 
   return (
     <NextUIProvider theme={theme}>
-      <Layout router={router}>
+      <MainLayout router={router}>
         <Component {...pageProps} />
         <Navbar isDarkMode={isDarkMode} onThemeChange={handleThemeChange} />
-      </Layout>
+      </MainLayout>
     </NextUIProvider>
   )
 }
