@@ -1,11 +1,16 @@
-import { Navbar, Button, Link, Text } from '@nextui-org/react'
+import {
+  Navbar,
+  Button,
+  Link,
+  Text,
+  Grid,
+  Switch,
+  useTheme
+} from '@nextui-org/react'
 import { Layout } from './Layout.js'
 import Logo from 'components/layouts/logo'
-import { Grid, Switch } from '@nextui-org/react'
-import { SunIcon } from './SunIcon'
-import { MoonIcon } from './MoonIcon'
-import { useColorMode } from '@chakra-ui/react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { SunIcon } from 'components/layouts/SunIcon'
+import { MoonIcon } from 'components/layouts/MoonIcon'
 
 export default function App() {
   const collapseItems = [
@@ -29,10 +34,11 @@ export default function App() {
               <Switch
                 color="secondary"
                 shadow
-                checked={true}
+                checked={isDarkMode}
                 size="xl"
                 iconOn={<SunIcon filled />}
                 iconOff={<MoonIcon filled />}
+                onChange={handleThemeChange}
               />
             </Grid>
           </Grid.Container>

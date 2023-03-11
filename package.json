@@ -26,6 +26,7 @@
     "react-animations": "^1.0.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.2",
+    "stitches": "^1.2.11",
     "webpack": "^5.75.0"
   },
   "devDependencies": {
