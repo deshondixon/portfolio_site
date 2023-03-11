@@ -1,4 +1,4 @@
-import { Box } from './Box'
+import { Box } from '@nextui-org/react'
 import { Content } from './Content'
 import { MainNavbar } from './navbar'
 
