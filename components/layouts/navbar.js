@@ -12,7 +12,8 @@ import Logo from 'components/layouts/logo'
 import { SunIcon } from 'components/layouts/SunIcon'
 import { MoonIcon } from 'components/layouts/MoonIcon'
 
-export default function App() {
+export default function App({ isDarkMode, onThemeChange }) {
+  const theme = useTheme()
   const collapseItems = [
     'About',
     'Contact',
@@ -38,7 +39,8 @@ export default function App() {
                 size="xl"
                 iconOn={<SunIcon filled />}
                 iconOff={<MoonIcon filled />}
-                onChange={handleThemeChange}
+                onChange={onThemeChange}
+                onClick={onThemeChange}
               />
             </Grid>
           </Grid.Container>
