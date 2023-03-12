@@ -2,7 +2,7 @@ import { Box } from '@nextui-org/react'
 import Content from './Content'
 import MainNavbar from './navbar'
 
-export default function MainLayout({ children, isDarkMode, onThemeChange }) {
+export default function Layout({ children, isDarkMode, onThemeChange }) {
   return (
     <Box
       css={{
