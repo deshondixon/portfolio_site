@@ -1,4 +1,4 @@
-export default function MoonIcon({
+export const MoonIcon = ({
   fill = 'currentColor',
   filled,
   size,
@@ -6,7 +6,7 @@ export default function MoonIcon({
   width,
   label,
   ...props
-}) {
+}) => {
   if (filled) {
     return (
       <svg
