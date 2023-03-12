@@ -1,8 +1,6 @@
 import { Navbar, Button, Link, Text, Grid, Switch } from '@nextui-org/react'
-import SunIcon from './SunIcon'
-import MoonIcon from './MoonIcon'
 
-export default function MainNavbar({ isDarkMode, onThemeChange }) {
+export default function MainNavbar({}) {
   const collapseItems = [
     'About',
     'Contact',
@@ -17,19 +15,6 @@ export default function MainNavbar({ isDarkMode, onThemeChange }) {
     <Navbar isBordered variant="floating">
       <Navbar.Brand>
         <Navbar.Toggle color="gradient" aria-label="toggle navigation" />
-        {/* <Grid.Container gap={2}>
-          <Grid>
-            <Switch
-              color="secondary"
-              shadow
-              checked={isDarkMode}
-              size="xl"
-              iconOn={<SunIcon filled />}
-              iconOff={<MoonIcon filled />}
-              onChange={onThemeChange}
-            />
-          </Grid>
-        </Grid.Container> */}
       </Navbar.Brand>
       <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline">
         <Navbar.Link href="#">About</Navbar.Link>
