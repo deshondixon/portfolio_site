@@ -50,7 +50,7 @@ const lightTheme = createTheme({
   }
 })
 
-const Website = ({ Component, pageProps, router }) => {
+export default function Website({ Component, pageProps, router }) {
   const [isDarkMode, setIsDarkMode] = useState(true)
 
   const handleThemeChange = () => {
@@ -67,5 +67,3 @@ const Website = ({ Component, pageProps, router }) => {
     </NextUIProvider>
   )
 }
-
-export default Website
