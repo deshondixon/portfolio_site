@@ -7,9 +7,9 @@ import {
   Switch,
   useTheme
 } from '@nextui-org/react'
-import { Logo } from './logo'
-import { SunIcon } from './SunIcon'
-import { MoonIcon } from './MoonIcon'
+import Logo from './logo'
+import SunIcon from './SunIcon'
+import MoonIcon from './MoonIcon'
 
 export default function MainNavbar({ isDarkMode, onThemeChange }) {
   const theme = useTheme()

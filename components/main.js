@@ -1,6 +1,6 @@
 import { Box } from '@nextui-org/react'
-import { Content } from './Content'
-import { MainNavbar } from './navbar'
+import Content from './Content'
+import MainNavbar from './navbar'
 
 export default function MainLayout({ children, isDarkMode, onThemeChange }) {
   return (

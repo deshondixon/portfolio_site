@@ -50,7 +50,7 @@ const lightTheme = createTheme({
   }
 })
 
-export default function Website({ Component, pageProps, router }) {
+export default function Website({ Component, pageProps }) {
   const [isDarkMode, setIsDarkMode] = useState(true)
 
   const handleThemeChange = () => {

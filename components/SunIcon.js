@@ -1,4 +1,4 @@
-export const SunIcon = ({
+export default function SunIcon({
   fill = 'currentColor',
   filled,
   size,
@@ -6,7 +6,7 @@ export const SunIcon = ({
   width,
   label,
   ...props
-}) => {
+}) {
   if (filled) {
     return (
       <svg

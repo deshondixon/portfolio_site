@@ -9,7 +9,6 @@ import {
   Row,
   Col
 } from '@nextui-org/react'
-
 import Section from './section'
 import Paragraph from './paragraph'
 import { Box } from '@chakra-ui/react'
