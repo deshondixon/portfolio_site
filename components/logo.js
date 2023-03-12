@@ -15,7 +15,7 @@ const LogoBox = styled.span`
   }
 `
 
-const Logo = () => {
+export default function Logo() {
   return (
     <Link block color="secondary" href="#">
       <LogoBox>
@@ -24,5 +24,3 @@ const Logo = () => {
     </Link>
   )
 }
-
-export default Logo

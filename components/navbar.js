@@ -11,7 +11,7 @@ import Logo from './logo'
 import { SunIcon } from './SunIcon'
 import { MoonIcon } from './MoonIcon'
 
-const MainNavbar = ({ isDarkMode, onThemeChange }) => {
+export default function MainNavbar({ isDarkMode, onThemeChange }) {
   const theme = useTheme()
   const collapseItems = [
     'About',
@@ -76,5 +76,3 @@ const MainNavbar = ({ isDarkMode, onThemeChange }) => {
     </MainLayout>
   )
 }
-
-export default MainNavbar

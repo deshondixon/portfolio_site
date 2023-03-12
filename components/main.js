@@ -2,8 +2,8 @@ import { Box } from '@nextui-org/react'
 import { Content } from './Content'
 import { MainNavbar } from './navbar'
 
-const MainLayout = ({ children, isDarkMode, onThemeChange }) => (
-  <Box
+export default function MainLayout({ children, isDarkMode, onThemeChange }) {
+  ;<Box
     css={{
       maxW: '100%'
     }}
@@ -12,6 +12,4 @@ const MainLayout = ({ children, isDarkMode, onThemeChange }) => (
     <MainNavbar isDarkMode={isDarkMode} onThemeChange={onThemeChange} />
     <Content />
   </Box>
-)
-
-export default MainLayout
+}
