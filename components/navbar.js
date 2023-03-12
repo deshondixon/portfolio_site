@@ -4,7 +4,7 @@ export default function MainNavbar({}) {
   const collapseItems = [
     'About',
     'Contact',
-    'Projects',
+    'My Portfolio',
     'Experience',
     'Github',
     'LinkedIn',
@@ -18,9 +18,7 @@ export default function MainNavbar({}) {
       </Navbar.Brand>
       <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline">
         <Navbar.Link href="#">About</Navbar.Link>
-        <Navbar.Link isActive href="#">
-          Projects
-        </Navbar.Link>
+        <Link href="/works">My Portfolio</Link>
         <Navbar.Link href="#"> Experience </Navbar.Link>
       </Navbar.Content>
       <Navbar.Content>

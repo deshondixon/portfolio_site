@@ -1,6 +1,4 @@
-import React, { useState } from 'react'
 import { createTheme, NextUIProvider } from '@nextui-org/react'
-import Layout from 'components/main.js'
 
 const theme = createTheme({
   type: 'dark',
@@ -29,9 +27,7 @@ const theme = createTheme({
 export default function Website({ Component, pageProps }) {
   return (
     <NextUIProvider theme={theme}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <Component {...pageProps} />
     </NextUIProvider>
   )
 }
