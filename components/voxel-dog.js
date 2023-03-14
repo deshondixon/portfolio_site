@@ -12,7 +12,15 @@ const VoxelDog = () => {
   const refContainer = useRef()
 
   return (
-    <Box ref={refContainer} position={[0, 0, 0]}>
+    <Box
+      ref={refContainer}
+      className="voxel-dog"
+      m="auto"
+      at={['-20px', '-60px', '-120px']}
+      mb={['-40px', '-140px', '-200px']}
+      w={[280, 480, 640]}
+      h={[280, 480, 640]}
+    >
       Dog!!!
     </Box>
   )
