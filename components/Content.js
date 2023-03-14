@@ -13,12 +13,17 @@ import Section from './section'
 import Paragraph from './paragraph'
 import { Box } from '@chakra-ui/react'
 import { BioSection, BioYear } from './bio'
+import NoSsr from 'components/no-srr'
+import VoxelDog from 'components/voxel-dog'
 
 export default function Content() {
   return (
     <>
-      <Container gap={2}>
+      <Container gap={4}>
         <Box align="center">
+          <NoSsr>
+            <VoxelDog />
+          </NoSsr>
           <Text
             h1
             size={41}

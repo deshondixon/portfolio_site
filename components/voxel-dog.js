@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
-import { Box, Spinner } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
+import { Loading, Spacer } from '@nextui-org/react'
 import * as THREE from 'three'
 import { OrbitCOntrols } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from 'lib/model'
@@ -10,18 +11,22 @@ function easeOutCirc(x) {
 
 const VoxelDog = () => {
   const refContainer = useRef()
+  const [loading, setLoading] = useState(true)
+  const [renderer, setRenderer] = useState(null)
+  const [camera, setCamera] = useState(null)
 
   return (
-    <Box
-      ref={refContainer}
-      className="voxel-dog"
-      m="auto"
-      at={['-20px', '-60px', '-120px']}
-      mb={['-40px', '-140px', '-200px']}
-      w={[280, 480, 640]}
-      h={[280, 480, 640]}
-    >
-      Dog!!!
+    <Box ref={refContainer} className="voxel-dog" m="auto">
+      {loading && (
+        <Loading
+          loadingCss={{ $$loadingSize: '100px', $$loadingBorder: '10px' }}
+          size="xl"
+          position="relative"
+          type="gradient"
+        >
+          DOG!!!!
+        </Loading>
+      )}
     </Box>
   )
 }
