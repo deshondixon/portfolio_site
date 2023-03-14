@@ -21,9 +21,6 @@ export default function Content() {
     <>
       <Container gap={4}>
         <Box align="center">
-          <NoSsr>
-            <VoxelDog />
-          </NoSsr>
           <Text
             h1
             size={41}
@@ -60,6 +57,9 @@ export default function Content() {
             </Text>
           </Grid>
           <Section delay={0.1}>
+            <NoSsr>
+              <VoxelDog />
+            </NoSsr>
             <Text
               h2
               size={30}
