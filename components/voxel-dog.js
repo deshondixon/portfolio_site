@@ -81,9 +81,14 @@ const VoxelDog = () => {
         if (frame <= 100) {
           const p = initialCameraPosition
           const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
-
-         camera.position.x = 10
-         camera.position.y = p.x * Math.sin(rotSpeed)
+          camera.position.x = 10
+          camera.position.y = p.x * Math.cos(rotSpeed) + p.z * Math.si(rotSpeed)
+          camera.position.z = p.z * Math.cos(rotSpeed) - p.z * Math.si(rotSpeed)
+          camera.lookAt(target)
+        } else {
+          controls.update()
+        }
+        renderer.render(scene, camera)
       }
       return () => {
         cancelAnimationFrame(req)
