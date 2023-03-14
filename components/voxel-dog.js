@@ -68,12 +68,27 @@ const VoxelDog = () => {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
+        animate()
         setLoading(false)
       })
 
       let req = null
       let frame = 0
-      const animate = () => {}
+      const animate = () => {
+        req = requestAnimationFrame(animate)
+        frame = frame <= 100 ? frame + 1 : frame
+
+        if (frame <= 100) {
+          const p = initialCameraPosition
+          const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
+
+         camera.position.x = 10
+         camera.position.y = p.x * Math.sin(rotSpeed)
+      }
+      return () => {
+        cancelAnimationFrame(req)
+        renderer.dispose()
+      }
     }
   }, [])
 
