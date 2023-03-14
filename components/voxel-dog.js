@@ -22,7 +22,8 @@ const VoxelDog = () => {
           loadingCss={{ $$loadingSize: '100px', $$loadingBorder: '10px' }}
           size="xl"
           position="relative"
-          type="gradient"
+          color="success"
+          textColor="success"
         >
           DOG!!!!
         </Loading>
